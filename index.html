@@ -158,6 +158,84 @@
   
   
   <article itemscope itemtype="http://schema.org/Article" class="post-block home" lang="zh-CN">
+    <link itemprop="mainEntityOfPage" href="http://yoursite.com/2020/05/03/python%E4%BD%9C%E4%B8%9A2/">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="image" content="/images/head.jpg">
+      <meta itemprop="name" content="福蓉">
+      <meta itemprop="description" content="my blog">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="Hexo">
+    </span>
+      <header class="post-header">
+        <h1 class="post-title" itemprop="name headline">
+          
+            <a href="/2020/05/03/python%E4%BD%9C%E4%B8%9A2/" class="post-title-link" itemprop="url">python作业2</a>
+        </h1>
+
+        <div class="post-meta">
+            <span class="post-meta-item">
+              <span class="post-meta-item-icon">
+                <i class="fa fa-calendar-o"></i>
+              </span>
+              <span class="post-meta-item-text">发表于</span>
+              
+
+              <time title="创建时间：2020-05-03 12:36:39 / 修改时间：12:37:40" itemprop="dateCreated datePublished" datetime="2020-05-03T12:36:39+08:00">2020-05-03</time>
+            </span>
+
+          
+
+        </div>
+      </header>
+
+    
+    
+    
+    <div class="post-body" itemprop="articleBody">
+
+      
+          <figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">import</span> urllib.parse</span><br></pre></td></tr></table></figure>
+
+
+<figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">import</span> urllib.request</span><br></pre></td></tr></table></figure>
+
+
+<figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="function"><span class="keyword">def</span> <span class="title">crawler</span><span class="params">()</span>:</span></span><br></pre></td></tr></table></figure>
+
+
+<figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">url = <span class="string">"https://cn.bing .com/ttranslatev3?isV</span></span><br></pre></td></tr></table></figure>
+
+
+<figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">form_ data =<span class="string">"fromlang"</span>: <span class="string">"auto-detect"</span> ，<span class="string">"fromlang"</span>: <span class="string">"auto-detect"</span> ，<span class="string">"to"</span>: <span class="string">"en"</span>&#125;</span><br></pre></td></tr></table></figure>
+
+
+<figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">data = bytes( ullib. parse .urlencode(form_response = urllib.request .urlopen( url, dataprint(response.read().decode(<span class="string">'utf-8'</span>))</span><br></pre></td></tr></table></figure>
+
+
+<figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">if</span> ___ name___ ==___ main__ <span class="string">":</span></span><br><span class="line"><span class="string">    crawler()</span></span><br></pre></td></tr></table></figure>
+<hr>
+
+      
+    </div>
+
+    
+    
+    
+      <footer class="post-footer">
+        <div class="post-eof"></div>
+      </footer>
+  </article>
+  
+  
+  
+
+        
+  
+  
+  <article itemscope itemtype="http://schema.org/Article" class="post-block home" lang="zh-CN">
     <link itemprop="mainEntityOfPage" href="http://yoursite.com/2020/05/03/python%E4%BD%9C%E4%B8%9A1/">
 
     <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
@@ -252,84 +330,6 @@
 <figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">squ = [<span class="number">1</span>,<span class="number">2</span>,[<span class="number">3</span>,<span class="number">4</span>]]</span><br><span class="line">print(squ[<span class="number">2</span>][<span class="number">0</span>])</span><br></pre></td></tr></table></figure>
 
 <p>正则表达式:<br>^: ^会匹配行或看字符串的起始位置，有时还会匹配整个文档的起始1<br>$: $会匹配行或字符串的结尾<br>\6:不会消耗任何字符只匹配一个位置，常用于匹配单词边界如我想从<br>\6不会匹配is两边的字符，但它会识别is两边是否为单词的边界<br>\d: 匹配数字，例如要匹配一个固定格式的电话号码以0开头前4位后7位<br>\w: 匹配字日，数字，下划线。<br>例如我要匹配”a2345BCD_ TTz” 正.<br>则:”\w+”这里的”+”字符为一个量词指重复<br>的次数，稍后会详细介绍。<br>\s:<br>匹配空格<br>例如字符“abc” 正 则:”\m\s\w\s\w”一<br>个字符后跟一个空格，如有字符间有多个空格直<br>接把”\s”写成“\s+”让空格重复<br>匹配除了换行符以外的任何字符<br>[abc}:字符组匹配包含括号内元素的字符<br>\W: 匹配任意不是字母，数字，下划线的字符<br>\S: 匹配任意不是空白符的字符<br>\D: 匹配任意非数字的字符<br>\B: 匹配不是单词开头或结束的位置<br>[^abc]:匹配除了abc以外的任意字符</p>
-<hr>
-
-      
-    </div>
-
-    
-    
-    
-      <footer class="post-footer">
-        <div class="post-eof"></div>
-      </footer>
-  </article>
-  
-  
-  
-
-        
-  
-  
-  <article itemscope itemtype="http://schema.org/Article" class="post-block home" lang="zh-CN">
-    <link itemprop="mainEntityOfPage" href="http://yoursite.com/2020/05/03/python%E7%AC%AC%E4%BA%8C%E6%AC%A1%E4%BD%9C%E4%B8%9A/">
-
-    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
-      <meta itemprop="image" content="/images/head.jpg">
-      <meta itemprop="name" content="福蓉">
-      <meta itemprop="description" content="my blog">
-    </span>
-
-    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
-      <meta itemprop="name" content="Hexo">
-    </span>
-      <header class="post-header">
-        <h1 class="post-title" itemprop="name headline">
-          
-            <a href="/2020/05/03/python%E7%AC%AC%E4%BA%8C%E6%AC%A1%E4%BD%9C%E4%B8%9A/" class="post-title-link" itemprop="url">python第二次作业</a>
-        </h1>
-
-        <div class="post-meta">
-            <span class="post-meta-item">
-              <span class="post-meta-item-icon">
-                <i class="fa fa-calendar-o"></i>
-              </span>
-              <span class="post-meta-item-text">发表于</span>
-              
-
-              <time title="创建时间：2020-05-03 00:36:08 / 修改时间：00:37:29" itemprop="dateCreated datePublished" datetime="2020-05-03T00:36:08+08:00">2020-05-03</time>
-            </span>
-
-          
-
-        </div>
-      </header>
-
-    
-    
-    
-    <div class="post-body" itemprop="articleBody">
-
-      
-          <figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">import</span> urllib.parse</span><br></pre></td></tr></table></figure>
-
-
-<figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">import</span> urllib.request</span><br></pre></td></tr></table></figure>
-
-
-<figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="function"><span class="keyword">def</span> <span class="title">crawler</span><span class="params">()</span>:</span></span><br></pre></td></tr></table></figure>
-
-
-<figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">url = <span class="string">"https://cn.bing .com/ttranslatev3?isV</span></span><br></pre></td></tr></table></figure>
-
-
-<figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">form_ data =<span class="string">"fromlang"</span>: <span class="string">"auto-detect"</span> ，<span class="string">"fromlang"</span>: <span class="string">"auto-detect"</span> ，<span class="string">"to"</span>: <span class="string">"en"</span>&#125;</span><br></pre></td></tr></table></figure>
-
-
-<figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">data = bytes( ullib. parse .urlencode(form_response = urllib.request .urlopen( url, dataprint(response.read().decode(<span class="string">'utf-8'</span>))</span><br></pre></td></tr></table></figure>
-
-
-<figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">if</span> ___ name___ ==___ main__ <span class="string">":</span></span><br><span class="line"><span class="string">    crawler()</span></span><br></pre></td></tr></table></figure>
 <hr>
 
       
